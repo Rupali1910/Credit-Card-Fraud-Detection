@@ -11,21 +11,23 @@
 
   <div id="preloader"></div>
   
-  <h1>Model Results</h1>
-  <div class="results">
-    {% if prediction == 0 %}
-    <h1 >
-        According to our model, the provided transaction is <span style="color: green">LEGIT</span> transaction.
-    </h1>
-    {% elif prediction == 1 %}
-    <h2>
-        According to our model, this transaction is a <span style="color: red">FRAUD</span> transaction.
-    </h2>
-    {% endif %}
+  <div class="container">
+    <h1>Model Results</h1>
+    <div class="results">
+      {% if prediction == 0 %}
+      <h1 >
+          According to our model, the provided transaction is <span style="color: green">LEGIT</span> transaction.
+      </h1>
+      {% elif prediction == 1 %}
+      <h2>
+          According to our model, this transaction is a <span style="color: red">FRAUD</span> transaction.
+      </h2>
+      {% endif %}
+    </div>
+    <a href="/">
+      <button class="btn-info">Retest</button>
+    </a>
   </div>
-  <a href="/">
-    <button class="btn-info">Retest</button>
-  </a>
 
   <script src="../static/script.js"></script>
 </body>

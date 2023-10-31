@@ -9,19 +9,20 @@
 <body style="text-align: center;">
 
     <div id="preloader"></div>
+    <div class="container">        
+        <h1>Credit Card Fraud Detection</h1>
     
-    <h1>Credit Card Fraud Detection</h1>
-
-    <div class="form-container">
-        <p>Enter the 30 feature values (in order):</p>
-        <form action="{{ url_for('predict')}}" method="POST">
-            <div>
-                <textarea name="message" rows="8" cols="50" placeholder="Enter values here"></textarea>
-            </div>
-            <div style="text-align: center;">
-                <input type="submit" class="btn-info" value="Predict" />
-            </div>
-        </form>
+        <div class="form-container">
+            <p>Enter the 30 feature values (in order):</p>
+            <form action="{{ url_for('predict')}}" method="POST">
+                <div>
+                    <textarea name="message" rows="8" cols="50" placeholder="Enter values here"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" class="btn-info" value="Predict" />
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="../static/script.js"></script>
