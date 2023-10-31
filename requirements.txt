@@ -1,0 +1,9 @@
+Flask==2.2.5
+gunicorn==20.1.0
+Jinja2==3.1.2
+numpy==1.21.6
+pickle-mixin==1.0.2
+scikit-learn==1.0.2
+scipy==1.7.3
+virtualenv==20.24.4
+Werkzeug==2.2.3
